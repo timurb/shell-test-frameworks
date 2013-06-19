@@ -12,3 +12,4 @@ Sort order is random.
 * [Shunit2](https://code.google.com/p/shunit2). This can also be obtained by `apt-get install shunit2` or searched for various forks/clones on github.
 * [kal-shlib-shunit](https://github.com/vaab/kal-shlib-shunit)
 * [shell-unittest of ALTLinux's libshell](http://git.altlinux.org/gears/l/libshell.git?f=libshell/shell-unittest;a=blob)
+* [tapper-autoreport](https://github.com/tapper/Tapper-autoreport) (`tapper-autoreport` is a testing-like framework while `tapper` is CI like Jenkins etc)
