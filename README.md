@@ -98,6 +98,8 @@ Installer: make-based installer provided.
 
 Not an actually testing framework but a library to easily produce output from your script in [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 
+It seems to carry much legacy stuff in it and I could not actually run it (although I didn't try very hard with it).
+
 Output: [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 
 ## [testlib.sh](https://gist.github.com/3877539)
