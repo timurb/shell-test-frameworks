@@ -43,7 +43,29 @@ Codebase consists of several files
 
 #### [Sharness](http://github.com/mlafeldt/sharness)
 
+* assertions are eval-ed
+
 #### [Shpec](https://github.com/shpec/shpec)
+
+Features:
+* test autorunner (RSpec-like): accepts parameter with tests
+* describe/it blocks
+* various assert functions
+* custom matchers supported
+* assertions are eval-ed
+* stubbing commands
+* failing assertion continues evaluation
+* no setup/teardown functions
+* color output
+
+Test cases:
+* run in the same process
+
+Outuput: [RSpec](http://en.wikipedia.org/wiki/RSpec)-like format.
+
+Installer: installation not needed but can be done via install.sh or a makefile
+
+Codebase is very small and clear although looks not to be very portable.
 
 #### [Shunit](http://shunit.sourceforge.net/)
 
