@@ -30,7 +30,7 @@ Features:
 * test case fails and aborts on first non-zero exit code
 * setup/teardown
 * helper functions to ease doing several asserts per test case
-* no tests skipping (probably can be done by modifying funciton names)
+* no tests skipping (probably can be done by modifying function names)
 
 Test cases:
 * coded in spearate functions with naming like `@test ".*"()`
