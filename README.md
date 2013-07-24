@@ -124,7 +124,10 @@ It seems to carry much legacy stuff in it and I could not actually run it (altho
 
 Output: [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 
-## [testlib.sh](https://gist.github.com/3877539)
+#### [testlib.sh](https://gist.github.com/3877539)
 
-## [ts](https://github.com/thinkerbot/ts)
+#### [ts](https://github.com/thinkerbot/ts)
 
+#### [wvtest](https://github.com/apenwarr/wvtest)
+
+Not an actually testing framework but a library to easily produce output in custom test-result format.
