@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Shell-test-frameworks by timurbatyrshin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Shell-test-frameworks</h1>
+        <p>A list of shell TDD frameworks</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/timurbatyrshin/shell-test-frameworks" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/timurbatyrshin/shell-test-frameworks/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/timurbatyrshin/shell-test-frameworks/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="shell-test-frameworks" class="anchor" href="#shell-test-frameworks"><span class="octicon octicon-link"></span></a>Shell test frameworks</h1>
+
+<p>This is a list of test frameworks and related tools in pure shell.</p>
+
+<p>Sort order is random.</p>
+
+<h4>
+<a name="roundup" class="anchor" href="#roundup"><span class="octicon octicon-link"></span></a><a href="http://github.com/bmizerany/roundup">Roundup</a>
+</h4>
+
+<p>Features:</p>
+
+<ul>
+<li>test autorunner</li>
+<li>test case fails and aborts on first non-zero exit code</li>
+<li>setup/teardown</li>
+<li>skipping tests</li>
+</ul><p>Test cases:</p>
+
+<ul>
+<li>coded in spearate functions with naming like <code>it_.*()</code> (RSpec-like)</li>
+<li>are searched in files passed as commandline parameters or in a current file with special shebang</li>
+</ul><p>Output: custom human-readable format.</p>
+
+<p>Installer: configure-make-based installer provided.</p>
+
+<p>Codebase consists of a single file.</p>
+
+<h4>
+<a name="bats" class="anchor" href="#bats"><span class="octicon octicon-link"></span></a><a href="http://github.com/sstephenson/bats">BATS</a>
+</h4>
+
+<p>Features:</p>
+
+<ul>
+<li>test autorunner</li>
+<li>test case fails and aborts on first non-zero exit code</li>
+<li>setup/teardown</li>
+<li>helper functions to ease doing several asserts per test case</li>
+<li>no tests skipping (probably can be done by modifying function names)</li>
+</ul><p>Test cases:</p>
+
+<ul>
+<li>coded in spearate functions with naming like <code>@test ".*"()</code>
+</li>
+<li>are searched in files passed as commandline parameters or in a current file with special shebang</li>
+</ul><p>Output: <a href="http://en.wikipedia.org/wiki/Test_Anything_Protocol">TAP</a> format.</p>
+
+<p>Installer: install.sh provided to do installation
+Codebase consists of several files</p>
+
+<h4>
+<a name="sharness" class="anchor" href="#sharness"><span class="octicon octicon-link"></span></a><a href="http://github.com/mlafeldt/sharness">Sharness</a>
+</h4>
+
+<ul>
+<li>assertions are eval-ed</li>
+</ul><h4>
+<a name="shpec" class="anchor" href="#shpec"><span class="octicon octicon-link"></span></a><a href="https://github.com/shpec/shpec">Shpec</a>
+</h4>
+
+<p>Features:</p>
+
+<ul>
+<li>test autorunner (RSpec-like): accepts parameter with tests</li>
+<li>describe/it blocks</li>
+<li>various assert functions</li>
+<li>custom matchers supported</li>
+<li>assertions are eval-ed</li>
+<li>stubbing commands</li>
+<li>failing assertion continues evaluation</li>
+<li>no setup/teardown functions</li>
+<li>color output</li>
+</ul><p>Test cases:</p>
+
+<ul>
+<li>run in the same process</li>
+</ul><p>Outuput: <a href="http://en.wikipedia.org/wiki/RSpec">RSpec</a>-like format.</p>
+
+<p>Installer: installation not needed but can be done via install.sh or a makefile</p>
+
+<p>Codebase is very small and clear although looks not to be very portable.</p>
+
+<h4>
+<a name="shunit" class="anchor" href="#shunit"><span class="octicon octicon-link"></span></a><a href="http://shunit.sourceforge.net/">Shunit</a>
+</h4>
+
+<h4>
+<a name="shunit2" class="anchor" href="#shunit2"><span class="octicon octicon-link"></span></a><a href="https://code.google.com/p/shunit2">Shunit2</a>
+</h4>
+
+<p>Features:</p>
+
+<ul>
+<li>test autorunner</li>
+<li>various assertXXX functions</li>
+<li>failing assertion produces message but does not abort test case</li>
+<li>setup/teardown</li>
+<li>failing/skipping tests</li>
+</ul><p>Test cases:</p>
+
+<ul>
+<li>coded in spearate functions with naming like <code>test.*()</code>
+</li>
+<li>are searched in currently loaded plain shell script</li>
+</ul><p>Wide range of shells and OSes is supported.</p>
+
+<p>This can also be obtained by <code>apt-get install shunit2</code> in Ubuntu or searched for various forks/clones on github.</p>
+
+<p>Output: custom human-readable format.
+Codebase consists of a single file.</p>
+
+<hr><p>See also <a href="http://code.google.com/p/shflags/">shflags</a> and <a href="https://sites.google.com/a/forestent.com/projects/log4sh">log4sh</a>
+of the same author which are commandline param processing library and logging library respectively.</p>
+
+<h4>
+<a name="kal-shlib-shunit" class="anchor" href="#kal-shlib-shunit"><span class="octicon octicon-link"></span></a><a href="https://github.com/vaab/kal-shlib-shunit">kal-shlib-shunit</a>
+</h4>
+
+<h4>
+<a name="shell-unittest-of-altlinuxs-libshell" class="anchor" href="#shell-unittest-of-altlinuxs-libshell"><span class="octicon octicon-link"></span></a>
+<a href="http://git.altlinux.org/gears/l/libshell.git?f=libshell/shell-unittest;a=blob">shell-unittest</a> of ALTLinux's libshell</h4>
+
+<p>Test autorunner searches for test cases in a file pointed to by specific function invocation.</p>
+
+<p>Has very poor documentation.
+A part of libshell and not usable without the rest of the library.</p>
+
+<p>Features:</p>
+
+<ul>
+<li>test autorunner</li>
+<li>various assertXXX functions</li>
+<li>setup/teardown</li>
+</ul><p>Test cases:</p>
+
+<ul>
+<li>coded in spearate functions with special comment placed after function name: <code># UnitTest</code>
+</li>
+<li>are searched by a special function invocation from a separate file</li>
+</ul><p>Output: custom human-readable format.
+Codebase for the whole library consists of several files.</p>
+
+<p>Installer: make-based installer provided.</p>
+
+<h4>
+<a name="tapper-autoreport" class="anchor" href="#tapper-autoreport"><span class="octicon octicon-link"></span></a><a href="https://github.com/tapper/Tapper-autoreport">tapper-autoreport</a>
+</h4>
+
+<p>Not an actually testing framework but a library to easily produce output from your script in <a href="http://en.wikipedia.org/wiki/Test_Anything_Protocol">TAP</a> format.</p>
+
+<p>It seems to carry much legacy stuff in it and I could not actually run it (although I didn't try very hard with it).</p>
+
+<p>Output: <a href="http://en.wikipedia.org/wiki/Test_Anything_Protocol">TAP</a> format.</p>
+
+<h4>
+<a name="testlibsh" class="anchor" href="#testlibsh"><span class="octicon octicon-link"></span></a><a href="https://gist.github.com/3877539">testlib.sh</a>
+</h4>
+
+<h4>
+<a name="ts" class="anchor" href="#ts"><span class="octicon octicon-link"></span></a><a href="https://github.com/thinkerbot/ts">ts</a>
+</h4>
+
+<h4>
+<a name="wvtest" class="anchor" href="#wvtest"><span class="octicon octicon-link"></span></a><a href="https://github.com/apenwarr/wvtest">wvtest</a>
+</h4>
+
+<p>Not an actually testing framework but a library to easily produce output in custom test-result format.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/timurbatyrshin">timurbatyrshin</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-43321747-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
