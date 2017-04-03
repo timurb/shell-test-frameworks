@@ -5,7 +5,11 @@ This is a list of test frameworks and related tools in pure shell.
 
 Sort order is random.
 
+Last commits for the frameworks are noted by 2017-04-03.
+
 #### [Roundup](http://github.com/bmizerany/roundup)
+
+Last commit: [Jan 27, 2015](https://github.com/bmizerany/roundup/commits/master)
 
 Features:
 * test autorunner
@@ -25,6 +29,8 @@ Codebase consists of a single file.
 
 #### [BATS](http://github.com/sstephenson/bats)
 
+Last commit: [Feb 19, 2016](https://github.com/sstephenson/bats/commits/master)
+
 Features:
 * test autorunner
 * test case fails and aborts on first non-zero exit code
@@ -41,11 +47,15 @@ Output: [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 Installer: install.sh provided to do installation
 Codebase consists of several files
 
-#### [Sharness](http://github.com/mlafeldt/sharness)
+#### [Sharness](https://github.com/chriscool/sharness)
+
+Last commit: [Sep 9, 2016](https://github.com/chriscool/sharness/commits/master)
 
 * assertions are eval-ed
 
 #### [Shpec](https://github.com/shpec/shpec)
+
+Last commit: [Apr 2, 2017](https://github.com/rylnd/shpec/commits/master)
 
 Features:
 * test autorunner (RSpec-like): accepts parameter with tests
@@ -69,7 +79,12 @@ Codebase is very small and clear although looks not to be very portable.
 
 #### [Shunit](http://shunit.sourceforge.net/)
 
+Last commit: 2 Nov 2008
+
+
 #### [Shunit2](https://github.com/kward/shunit2)
+
+Last commit: [Mar 16, 2017](https://github.com/kward/shunit2/commits/master)
 
 Features:
 * test autorunner
@@ -95,7 +110,13 @@ of the same author which are commandline param processing library and logging li
 
 #### [kal-shlib-shunit](https://github.com/vaab/kal-shlib-shunit)
 
-#### [shell-unittest](http://git.altlinux.org/gears/l/libshell.git?f=libshell/shell-unittest;a=blob) of ALTLinux's libshell
+Last commit: [Apr 30, 2012](https://github.com/vaab/kal-shlib-shunit/commits/master)
+
+(3 commits in total for the whole lifetime)
+
+#### [shell-unittest](http://git.altlinux.org/gears/l/libshell.git?p=libshell.git;a=summary) of ALTLinux's libshell
+
+Last commit: [18 Nov 2016](http://git.altlinux.org/gears/l/libshell.git?p=libshell.git;a=log)
 
 Test autorunner searches for test cases in a file pointed to by specific function invocation.
 
@@ -118,6 +139,8 @@ Installer: make-based installer provided.
 
 #### [tapper-autoreport](https://github.com/tapper/Tapper-autoreport) 
 
+Last commit: [22 Sep 2014](https://github.com/tapper/Tapper-autoreport/commits/master)
+
 Not an actually testing framework but a library to easily produce output from your script in [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 
 It seems to carry much legacy stuff in it and I could not actually run it (although I didn't try very hard with it).
@@ -126,8 +149,14 @@ Output: [TAP](http://en.wikipedia.org/wiki/Test_Anything_Protocol) format.
 
 #### [testlib.sh](https://gist.github.com/3877539)
 
+Last commit: [13 Feb 2013](https://gist.github.com/rtomayko/3877539/revisions)
+
 #### [ts](https://github.com/thinkerbot/ts)
 
+Last commit: [Jun 1, 2016](https://github.com/thinkerbot/ts/commits/master)
+
 #### [wvtest](https://github.com/apenwarr/wvtest)
+
+Last commit: [Jun 9, 2015](https://github.com/apenwarr/wvtest/commits/master)
 
 Not an actually testing framework but a library to easily produce output in custom test-result format.
