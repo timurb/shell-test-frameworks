@@ -69,7 +69,7 @@ Codebase is very small and clear although looks not to be very portable.
 
 #### [Shunit](http://shunit.sourceforge.net/)
 
-#### [Shunit2](https://code.google.com/p/shunit2)
+#### [Shunit2](https://github.com/kward/shunit2)
 
 Features:
 * test autorunner
